@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@android:color/white"
+    android:padding="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/text2"
+        android:text="Add new task"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="100dp"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/new_content"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        android:hint="write your task..."
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+    <Button
+        android:id="@+id/btn_add"
+        app:layout_constraintTop_toBottomOf="@+id/new_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Add"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/new_content"
+        app:layout_constraintLeft_toRightOf="@+id/btn_add"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:text="Cancel"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
